@@ -1,0 +1,406 @@
+
+*{ padding: 0px;
+margin:0px ;
+text-decoration: none;
+list-style: none;
+
+
+}
+
+body {
+  
+  background-color:#000;
+  display: flex;
+  flex-direction: column;
+ 
+}
+  
+
+.entete{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+width: 100%;
+
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  color: rosybrown;
+}
+/*footer*/
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fa{
+  color: red;
+font-size:15px;
+}
+
+footer{
+  
+  width: 100%;
+  background-color: #000;
+  color: white;
+  text-align: center;
+padding-top: 30px;
+padding-bottom: 20px;
+
+}
+
+
+
+/*navbar*/
+.header{
+
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    width: 100%;
+    height: 100px;
+  } 
+    .navmenu{
+      list-style:none ;
+      display: flex;
+    } 
+    .navmenu> li{
+      padding: 10px;
+    }
+
+.navmenu> li :hover{
+  background-color:#34495e;
+  border-radius: 20px;
+ padding: 20px;
+}
+.navmenu> li > a {
+    margin: 0 10px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+.navmenu > li > a:hover {
+    text-decoration: underline;
+
+
+}
+
+
+.navmenu-responsive {
+    display: none;
+    top: 80px;
+    right: 0;
+    background-color:  #000;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 2px solid white;
+  }
+  
+   #nav-btn {
+    display: none;
+  }
+  
+  
+  
+  .burger-menu {
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.116);
+    border-radius: 2px;
+    display: none;
+    padding: 8px;
+    width: 20px;
+  }
+  .burger-menu span {
+    border: 1px solid rgb(25, 66, 201);
+    width: 100%;
+    margin: 2px 0;
+  }
+  /*media querie*/
+
+  @media  (max-width:900px) {
+    .entete{
+      flex-direction: column;}
+    .navmenu> li > a {
+      display: none;
+      
+    }
+   
+    .nav-links li a{
+      color: #ddd;
+      
+    }
+    
+    .burger-menu {
+      display: flex;
+      flex-direction: column;
+      border-radius: 2px solid white;
+    }
+  
+    #nav-btn:checked + .navmenu-responsive {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    
+    }
+    .nutriblog{
+    flex-wrap: wrap;}
+    .biographie-container{
+      flex-direction: column;
+    }
+    .contentcontact{
+      flex-direction: column;
+      
+    }
+    .article-container{
+      grid-template-columns: repeat(1,1fr);
+      
+    }
+  }
+  
+/*  acceuil section nutrilog*/
+.nutriblog{
+  width: 97%;
+ 
+  background-color: #34495e;
+  border-radius: 20px;
+  box-shadow: 2px 2px 12px rgba(231, 227, 227, 0.856);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rosybrown;
+  margin:20px;
+ 
+  
+}
+.nutriblog h1{
+ padding: 20px;
+ margin: 20px;
+}
+
+.video{
+  display: flex;
+  justify-content: center;
+  align-items:space-between;
+  flex-wrap: wrap;
+  margin: 20px;
+  width:"420px"; height:"320px";
+ 
+}
+
+
+/*  acceuil section biographie*/
+
+.biographie-container{
+  width: 97%;
+  background-color: #34495e;
+  border-radius: 20px;
+  box-shadow: 2px 2px 12px rgba(231, 227, 227, 0.856);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:20px;
+ 
+}
+.biographie-container img{
+  height: 250px;
+  margin: 20px;
+ 
+ 
+ 
+
+}
+.biographie-text{
+  width: 550px;
+ display: flex;
+ flex-direction: column;
+ justify-content: left;
+  align-items: flex-start;
+  width: 100%;
+  margin: 20px;
+ 
+}
+
+.biographie-text p:nth-child(1){ 
+color: rosybrown;
+font-family: myriad pro;
+font-weight: bold;
+font-size: 23px;
+line-height: 0px;
+margin-bottom: 20px;
+}
+.biographie-text p:nth-child(2){
+  color: #2988b9;
+  font-size: 13px;
+  font-family: myriad pro;
+font-weight: bold;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.biographie-text p:nth-child(3),.biographie-text p:nth-child(4){
+ 
+  font-size: 16px;
+  font-family: myriad pro;
+font-weight: bold;
+
+}
+/*  acceuil section contact*/
+
+.coordonnes{
+  width: 97%;
+
+  background-color: #34495e;
+  border-radius: 20px;
+  box-shadow: 2px 2px 12px rgba(231, 227, 227, 0.856);
+  display: flex;
+ flex-direction: column;
+ justify-content: center;
+  align-items: center;
+  margin:20px;
+  
+}
+.hcontact{
+  
+  text-align: center;
+  color: rosybrown;
+  width: 100%;
+ 
+  
+}
+.contentcontact{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+ 
+}
+.forminfo{
+  margin: 20px;
+}
+/*page rejoindre nous*/
+.contact{
+  background-size: cover;
+  padding:  40px 0px;
+  }
+  .Laissezmessage> h1{
+    text-align: center;
+    color: rosybrown;
+  
+  }
+  .border{
+    width: 100px;
+    height: 10px;
+    background: #34495e;
+    margin:40px auto ;
+  
+  }
+  form{
+    max-width: 400px;
+    margin:auto;
+    padding: 0 10px;
+    overflow: hidden;
+  }
+  .form-text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin:16px opx ;
+  border:0px;
+  background:#111
+  padding-box 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+  }
+  .form-text:hover{
+    box-shadow:0 0 10px4px #34495e;
+  }
+  textarea .form-text{
+    resize: none;
+    height: 120px;
+  }
+  .form-bottom{
+    float: right;
+    border: 0px;
+    background: #34495e;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .form-bottom:hover{
+    background:#34495e;
+  }
+
+/* page nutriblog*/
+.article-container{
+  width: 97%;
+ 
+  background-color: #34495e;
+  border-radius: 20px;
+  box-shadow: 2px 2px 12px rgba(231, 227, 227, 0.856);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rosybrown;
+  margin:20px;
+  padding-top: 20px;
+}
+.tittle-container{
+  text-align: center;
+  color: rosybrown;
+  padding:1rem ;
+  position: relative;
+}
+
+.article{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 2px;
+  padding: 1rem 80px;
+  font-size: 17px;
+  color: #fff;
+}
+.article-box{
+  padding: 1rem;
+  color: white;
+  cursor: pointer;
+}
+.article-tittle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+
+}
+.article-image{
+  width: 100%;
+}
+.article-image img{
+  
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+}
+
+.article-tittle h1{
+  color: #fff;
+  margin: 10px;
+
+}
+
